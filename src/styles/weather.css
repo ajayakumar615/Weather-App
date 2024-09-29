@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  /* background: linear-gradient(to right, #6dd5ed, #2193b0); */
+  background-image: url("https://images.pexels.com/photos/33834/landscape-shore-sunset-clouds.jpg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #264653;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+.app-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+  /* color: #9a031e; */
+  color: #432818;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+div {
+  margin-top: 20px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: #432818;
+}
