@@ -87,3 +87,10 @@ div {
   font-size: 20px;
   color: #432818;
 }
+.error-message {
+  color: #f60004;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}

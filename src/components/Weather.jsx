@@ -10,6 +10,7 @@ import { FaPlaceOfWorship } from "react-icons/fa";
 function Weather() {
     let [city, setCity] = useState("");
     let [weatherinfo, setweatherinfo] = useState(null);
+    let [error, setError] = useState(null);
 
     let fetchapi = async () => {
         let apikey = "d9c3f3cddfa34a0ff70e4d7cb05032a4";
@@ -21,11 +22,15 @@ function Weather() {
             if (finaldata.cod === 200) {
                 setweatherinfo(finaldata);
                 console.log(finaldata);
+                setError(null);
             } else {
                 console.log("Invalid City Name");
+                setError("Invalid city name, please try again.");
+                setweatherinfo(null);
             }
         } catch (error) {
             console.log(error);
+            setweatherinfo(null);
         }
     };
 
@@ -39,6 +44,7 @@ function Weather() {
                     onChange={(e) => setCity(e.target.value)}
                 />
                 <button onClick={fetchapi}>Get Weather</button>
+                {error && <p className="error-message">{error}</p>}
                 <div>
                     {weatherinfo && (
                         <>
